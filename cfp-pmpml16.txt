@@ -1,0 +1,48 @@
+Call for Papers: Private Multi-Party Machine Learning -- NIPS 2016 Workshop
+December 9 or 10, Barcelona
+Website: https://pmpml.github.io/PMPML16/
+
+Private multi-party learning focuses on the problem of privacy-preserving machine learning in scenarios where sensitive datasets are distributed across multiple data owners. Such distributed scenarios occur quite often in practice, for example when different parties contribute different records to a dataset, or information about each record in the dataset is held by different data owners. Different communities have developed approaches to deal with this problem, including differential privacy-like techniques where noisy sketches are exchanged between the parties, homomorphic encryption where operations are performed on encrypted data, and tailored approaches using techniques from the field of secure multi-party computation. This workshop will serve as a forum to unify different perspectives on this problem and explore the relative merits of each approach. The workshop will also serve as a venue for networking researchers from the machine learning and secure multi-party computation communities interested in private learning.
+
+The workshop will have a particular emphasis in the decentralization aspect of privacy-preserving machine learning. This includes a large number of realistic scenarios where the classical setup of differential privacy with a 'trusted curator' that prepares the data cannot be directly applied. The problem of privacy-preserving computation gains relevance in this model, and effectively leveraging the tools developed by the cryptographic community to develop private multi-party learning algorithms poses a remarkable challenge. The workshop program includes an introductory tutorial to secure multi-party computation for a machine learning audience, and talks by world-renowned experts from the machine learning and cryptography communities who have made high quality contributions to this problem.
+
+We invite submissions of recent work on private and multi-party machine learning, both theory and application-oriented. Similarly to how NIPS and other NIPS workshops are organized, all accepted abstracts will be part of a poster session held during the workshop. Additionally, the PC will select a subset of the abstracts for short oral presentations. At least one author of each accepted abstract is expected to represent it at the workshop.
+ 
+Topics of interest include:
+- secure multi-party computation techniques for machine learning
+- learning on encrypted data
+- distributed privacy-preserving algorithms
+- decentralized protocols in machine learning
+- integrity of computations in distributed environments
+
+The workshop will not have formal proceedings, but authors of accepted abstracts can choose to have their work published on the workshop webpage.
+
+
+** Submission instructions **
+
+Submissions in the form of extended abstracts must be at most 4 pages long (not including references) and adhere to the NIPS format (https://nips.cc/Conferences/2016/PaperInformation/StyleFiles). We do accept submissions of work recently published or currently under review. Submissions do not need to be anonymized.
+
+  - Submission url: https://easychair.org/conferences/?conf=pmpml16
+  - Submission deadline: September 23, 2016
+  - Notification of acceptance: October 3, 2016
+  - NIPS early registration deadline: October 6, 2016
+
+
+** Program Committee **
+
+Myrto Arapinis (Edinburgh)
+Louis Aslett (Oxford)
+Emiliano De Cristofaro (UCL)
+Yan Huang (Indiana)
+Aggelos Kiayias (Edinburgh)
+Mahnush Movahedi (Yale)
+Jan Ramon (INRIA)
+
+
+** Organizers **
+
+Borja Balle (Lancaster)
+Aurélien Bellet (INRIA)
+David Evans (Virginia)
+Adrià Gascón (Edinburgh)
+
