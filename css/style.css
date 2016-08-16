@@ -268,7 +268,7 @@
         webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
     }
 
-    #about,#dates {
+    #about,#dates,#sponsor {
         width: 100%;
         padding: 100px 0 50px;
         color: white;
@@ -294,13 +294,6 @@
             font-size: 20px;
             border-color: darkgrey;
         }
-    }
-    
-    .organizers-section {
-        width: 100%;
-        padding: 50px 0;
-        color: black;
-        background-color: darkgrey;
     }
     
     li.organizer {
