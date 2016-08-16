@@ -277,14 +277,14 @@
 
     #about,#dates {
         width: 100%;
-        padding: 100px 0 50px;
+        padding: 100px 50px 50px 50px;
         color: white;
         background-color: black;
     }
 
     #speakers,#organizers {
         width: 100%;
-        padding: 100px 0 50px;
+        padding: 100px 50px 50px 50px;
         color: black;
         background-color: darkgrey;
     }
