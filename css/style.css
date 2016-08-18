@@ -147,7 +147,7 @@
         padding: 100px 0;
         text-align: center;
         color: white;
-        background: url(../img/castellers.jpg) no-repeat top center scroll;
+        background: url(../img/castellers-small.jpg) no-repeat top center scroll;
         background-color: black;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -172,16 +172,6 @@
         .intro {
             background: url(../img/castellers.jpg) no-repeat top right scroll;
             background-size: cover;
-        }
-    }
-    
-    @media (min-width: 1075px) {
-        .intro {
-            background: url(../img/castellers.jpg) no-repeat top right scroll;
-            background-size: cover;
-        }
-        .image-width {
-            width: 970px;
         }
     }
     
