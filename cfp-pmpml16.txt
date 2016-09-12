@@ -1,5 +1,5 @@
 Call for Papers: Private Multi-Party Machine Learning -- NIPS 2016 Workshop
-December 9 or 10, Barcelona
+December 9, Barcelona
 Website: https://pmpml.github.io/PMPML16/
 
 Private multi-party learning focuses on the problem of privacy-preserving machine learning in scenarios where sensitive datasets are distributed across multiple data owners. Such distributed scenarios occur quite often in practice, for example when different parties contribute different records to a dataset, or information about each record in the dataset is held by different data owners. Different communities have developed approaches to deal with this problem, including differential privacy-like techniques where noisy sketches are exchanged between the parties, homomorphic encryption where operations are performed on encrypted data, and tailored approaches using techniques from the field of secure multi-party computation. This workshop will serve as a forum to unify different perspectives on this problem and explore the relative merits of each approach. The workshop will also serve as a venue for networking researchers from the machine learning and secure multi-party computation communities interested in private learning.
