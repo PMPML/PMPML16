@@ -33,6 +33,7 @@ Submissions in the form of extended abstracts must be at most 4 pages long (not 
 Myrto Arapinis (Edinburgh)
 Louis Aslett (Oxford)
 Emiliano De Cristofaro (UCL)
+Jihun Hamm (Ohio State)
 Yan Huang (Indiana)
 Aggelos Kiayias (Edinburgh)
 Mahnush Movahedi (Yale)
