@@ -23,7 +23,7 @@ The workshop will not have formal proceedings, but authors of accepted abstracts
 Submissions in the form of extended abstracts must be at most 4 pages long (not including references) and adhere to the NIPS format (https://nips.cc/Conferences/2016/PaperInformation/StyleFiles). We do accept submissions of work recently published or currently under review. Submissions do not need to be anonymized.
 
   - Submission url: https://easychair.org/conferences/?conf=pmpml16
-  - Submission deadline: September 26, 2016 (5pm CET)
+  - Submission deadline: September 26, 2016 (11:59pm CET)
   - Notification of acceptance: October 3, 2016
   - NIPS early registration deadline: October 6, 2016
 
