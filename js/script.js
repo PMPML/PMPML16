@@ -34,6 +34,10 @@ $('.navbar-collapse ul li a').click(function () {
     }
 });
 
+$('.collapse').on('show.bs.collapse', function () {
+    $('.collapse.in').collapse('hide');
+});
+
 function init() {
 
 }
