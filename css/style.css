@@ -22,7 +22,7 @@
         font-weight: 700;
         letter-spacing: 1px;
     }
-
+    
     h3 {
         margin: 0 0 15px;
         text-transform: uppercase;
@@ -266,15 +266,19 @@
     body {
         webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
     }
-
-    #about,#schedule,#dates {
+    
+    #about,
+    #schedule,
+    #dates,
+    #papers {
         width: 100%;
         padding: 100px 50px 50px 50px;
         color: white;
         background-color: black;
     }
-
-    #speakers,#papers,#organizers {
+    
+    #speakers,
+    #organizers {
         width: 100%;
         padding: 100px 50px 50px 50px;
         color: black;
@@ -315,9 +319,9 @@
     }
     
     .hiddenRow {
-	padding: 0 !important;
+        padding: 0 !important;
     }
-
+    
     .btn {
         text-transform: uppercase;
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -340,4 +344,32 @@
         outline: none;
         color: black;
         background-color: #42DCA3;
+    }
+    
+    .panel-paper {
+        border-color: black;
+        text-align: left;
+        margin-bottom: 12px;
+    }
+    
+    .panel-paper > .panel-paper-body {
+        background-color: darkgrey;
+        color: black;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        font-size: 14px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    
+    .panel-paper > .panel-paper-footer {
+        background-color: white;
+        color: black;
+        font-size: 12px;
+    }
+    
+    .paper-title {
+        font-weight: bold;
+        font-style: italic;
+        color: black;
     }
