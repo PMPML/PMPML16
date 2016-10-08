@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Private Multi-Party Machine Learning (NIPS 2016 Workshop)</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <span class="light">PMPML'16</span>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">Scope</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#speakers">Invited Speakers</a>
+                    </li>
+                    <!--
+                    <li>
+                        <a class="page-scroll" href="#schedule">Schedule</a>
+                    </li>
+-->
+                    <li>
+                        <a class="page-scroll" href="#papers">Accepted Papers</a>
+                    </li>
+
+                    <li>
+                        <a class="page-scroll" href="#dates">CFP &amp; Dates</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#organizers">Organizers</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Private Multi&#8209;Party Machine Learning</h1>
+                        <p class="intro-text">NIPS 2016 Workshop
+                            <br>Barcelona, December 9</p>
+                        <br />
+                        <p style="color: #42DCA3; font-weight: bold; font-style: italic;">New deadline: September 26 (11:59pm CET)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Scope</h2>
+                <p>The one-day workshop focuses on the problem of privacy-preserving machine learning in scenarios where sensitive datasets are distributed across multiple data owners. Such distributed scenarios occur quite often in practice, for example when different parties contribute different records to a dataset, or information about each record in the dataset is held by different data owners.</p>
+                <p>Different communities have developed approaches to deal with this problem, including differential privacy-like techniques where noisy sketches are exchanged between the parties, homomorphic encryption where operations are performed on encrypted data, and tailored approaches using techniques from the field of secure multi-party computation. The workshop will serve as a forum to unify different perspectives on this problem, explore the relative merits of each approach, and investigate future lines of research.</p>
+                <p>The workshop will have a particular emphasis in the decentralization aspect of privacy-preserving machine learning. This includes a large number of realistic scenarios where the classical setup of differential privacy with a 'trusted curator' that prepares the data cannot be directly applied. The problem of privacy-preserving computation gains relevance in this model, and effectively leveraging the tools developed by the cryptographic community to develop private multi-party learning algorithms poses a remarkable challenge.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speakers Section -->
+    <section id="speakers" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Invited Speakers</h2>
+                <ul class="list-group">
+                    <li class="list-group-item speaker">Nina Balcan (CMU)</li>
+                    <li class="list-group-item speaker">Jack Doerner (Virginia)</li>
+                    <li class="list-group-item speaker">Stratis Ioannidis (Northeastern)</li>
+                    <li class="list-group-item speaker">Kobbi Nissim (Georgetown and Harvard)</li>
+                    <li class="list-group-item speaker">Mariana Raykova (Yale)</li>
+                    <li class="list-group-item speaker">Dawn Song (UC Berkeley)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <!--
+    <section id="schedule" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Schedule</h2>
+		<table class="table">
+		    <tbody>
+		      <tr>
+			<td>8.45</td>
+			<td>Welcome and Introduction</td>
+		      </tr>
+		      <tr>
+			<td>9.00</td>
+			<td>A. Yao &mdash; Garble the world
+			<a href="#abs1" data-toggle="collapse" class="accordion-toggle">abstract</button></td>
+		      </tr>
+		      <tr>
+			<td colspan="2" class="hiddenRow">
+				<div class="accordion-body collapse" id="abs1">Lorem ipsum dolor text....</div>
+			</td>
+		      </tr>
+		      <tr>
+			<td>9.45</td>
+			<td>J. Doe &mdash; How To Be Anonymous
+			<a href="#abs2" data-toggle="collapse" class="accordion-toggle">abstract</button></td>
+		      </tr>
+		      <tr>
+			<td colspan="2" class="hiddenRow">
+				<div class="accordion-body collapse" id="abs2">Lorem ipsum dolor text....</div>
+			</td>
+		      </tr>
+		      <tr>
+			<td>10.30</td>
+			<td>Coffee Break</td>
+		      </tr>
+		      <tr>
+			<td>11.00</td>
+			<td>Invited Talk 3</td>
+		      </tr>
+		      <tr>
+			<td>11.45</td>
+			<td>Invited Talk 4</td>
+		      </tr>
+		      <tr>
+			<td>12.30</td>
+			<td>Poster Spotlights</td>
+		      </tr>
+		      <tr>
+			<td>13.00</td>
+			<td>Lunch Break</td>
+		      </tr>
+		      <tr>
+			<td>14.30</td>
+			<td>Poster Spotlights</td>
+		      </tr>
+		      <tr>
+			<td>15.00</td>
+			<td>Coffee Break /// Poster Session</td>
+		      </tr>
+		      <tr>
+			<td>16.00</td>
+			<td>Invited Talk 5</td>
+		      </tr>
+		      <tr>
+			<td>16.45</td>
+			<td>Invited Talk 6</td>
+		      </tr>
+		      <tr>
+			<td>17.15</td>
+			<td>Contributed Talk 1</td>
+		      </tr>
+		      <tr>
+			<td>17.45</td>
+			<td>Contributed Talk 2</td>
+		      </tr>
+		      <tr>
+			<td>18.15</td>
+			<td>Wrap Up</td>
+		      </tr>
+		    </tbody>
+		</table>
+            </div>
+        </div>
+    </section>
+-->
+
+    <!-- Accepted Papers -->
+    <section id="papers" class="container content-section text-center">
+        <div class="row">
+
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Accepted Papers</h2>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body"><span class="paper-author">Peter Kairouz, Sewoong Oh, Pramod Viswanath</span>
+                        <br /><a data-toggle="collapse" href="#abs1" class="paper-title">Differentially Private Multi-party Computation</a>
+                    </div>
+                    <div id="abs1" class="panel-footer panel-paper-footer collapse">We study the problem of multi-party computation under approximate (ε, δ) differential privacy. We assume an interactive setting with k parties, each possessing a private bit. Each party wants to compute a function defined on all the parties’ bits. Differential privacy ensures that there remains uncertainty in any party’s bit even when given the transcript of interactions and all the other parties’ bits. This paper is a follow up to our work in [9], where we studied multi-party computation under (ε, 0) differential privacy. We generalize the results in [9] and prove that a simple non-interactive randomized response mechanism is optimal. Our optimality result holds for all privacy levels (all values of ε and δ), heterogenous privacy levels across parties, all types of functions to be computed, all types of cost metrics, and both average and worst-case (over the inputs) measures of accuracy.</div>
+                </div>
+
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body"><span class="paper-author">Martine De Cock, Rafael Dowsley, Anderson C. A. Nascimento and Stacey C. Newman</span>
+                        <br /><a data-toggle="collapse" href="#abs2" class="paper-title">Fast, Privacy Preserving Linear Regression over Distributed Datasets based on Pre-Distributed Data</a>
+                    </div>
+                    <div id="abs2" class="panel-footer panel-paper-footer collapse">We propose a protocol for performing linear regression over a dataset that is distributed over multiple parties. The parties jointly compute a linear regression model without actually revealing their own datasets. Our solution is information-theoretically secure and is based on the assumption that a trusted initializer pre-distributes correlated randomness to the parties during a setup phase. The actual computation happens during an online phase and does not involve the trusted initializer. Our online protocol is orders of magnitude faster than previous solutions.</div>
+                </div>
+
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body"><span class="paper-author">Mijung Park, James Foulds, Kamalika Chaudhuri, Max Welling</span>
+                        <br /><a data-toggle="collapse" href="#abs3" class="paper-title">Private Topic Modeling</a>
+                    </div>
+                    <div id="abs3" class="panel-footer panel-paper-footer collapse">We develop a privatised stochastic variational inference method for Latent Dirichlet Allocation (LDA). The iterative nature of stochastic variational inference presents challenges: multiple iterations are required to obtain accurate posterior distributions, yet each iteration increases the amount of noise that must be added to achieve a reasonable degree of privacy. We propose a practical algorithm that overcomes this challenge by combining: (1) A relaxed notion of the differential privacy, called concentrated differential privacy, which provides high probability bounds for cumulative privacy loss, which is well suited for iterative algorithms, rather than focusing on single-query loss; and (2) privacy amplification resulting from subsampling of large-scale data. Focusing on conjugate exponential family models, in our private variational inference, all the posterior distributions will be privatised by simply perturbing expected sufficient statistics. Using Wikipedia data, we illustrate the effectiveness of our algorithm for large-scale data.</div>
+                </div>
+
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body"><span class="paper-author">Michael Smith, Max Zwiessele, Neil Lawrence</span>
+                        <br /><a data-toggle="collapse" href="#abs4" class="paper-title">Differentially Private Gaussian Processes</a>
+                    </div>
+                    <div id="abs4" class="panel-footer panel-paper-footer collapse">Differential privacy allows algorithms to have provable privacy guarantees. Gaussian processes are a widely used approach for dealing with uncertainty in functions. This paper explores differentially private mechanisms for Gaussian processes. We compare adding noise both pre- and post-regression. For the former we develop a new kernel for use with binned data. For the latter we show that using inducing inputs allows us to reduce the noise scale. For the datasets used, the two strategies have comparable accuracy. Together these methods provide a starter toolkit for combining differential privacy and Gaussian processes.</div>
+                </div>
+
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body"><span class="paper-author">Christina Heinze-Deml, Brian McWilliams, Nicolai Meinshausen</span>
+                        <br /><a data-toggle="collapse" href="#abs5" class="paper-title">Preserving Differential Privacy Between Features in Distributed Estimation</a>
+                    </div>
+                    <div id="abs5" class="panel-footer panel-paper-footer collapse">Privacy is crucial in many applications of machine learning. Legal, ethical and societal issues restrict the sharing of sensitive data making it difficult to learn from datasets that are partitioned between many parties. The differential privacy framework guarantees preserving anonymity in a large dataset. However, in the distributed setting very few approaches exist for private data sharing. To this end, we propose PriDE, a scalable framework for distributed estimation where each party communicates perturbed sketches of their locally held features ensuring differentially private data sharing. For L2 penalized supervised learning problems PriDE has bounded estimation error compared with the optimal estimates obtained without privacy constraints in the non-distributed setting. </div>
+                </div>
+
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body"><span class="paper-author">Beyza Ermis, Taylan Cemgil</span>
+                        <br /><a data-toggle="collapse" href="#abs6" class="paper-title">Data Sharing via Differentially Private Coupled Tensor Factorization</a>
+                    </div>
+                    <div id="abs6" class="panel-footer panel-paper-footer collapse">We develop a learning mechanism that protects the privacy of individuals in a distributed setting, in which 'N' data sites jointly estimate parameters of a statistical model conditioned on all the data. Unlike the classical asymmetric curator/analyst scenario, here, each data site is both a data provider and a data consumer. The sites want to maximize the utility of the released data while providing privacy guarantees for participating individuals. A natural statistical model for this distributed scenario is coupled tensor factorization. We use a novel connection between differential privacy and sampling from a Bayesian posterior via Stochastic Gradient Langevin Dynamics (SGLD) to derive an efficient and privacy preserving coupled tensor factorization algorithm. We demonstrate that the proposed method is able to provide good prediction accuracy on synthetic and real datasets while providing both site-level and user-level differential privacy.</div>
+                </div>
+
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body"><span class="paper-author">Morten Dahl, Valerio Pastro, Mathieu Poumeyrol</span>
+                        <br /><a data-toggle="collapse" href="#abs7" class="paper-title">Private Data Aggregation on a Budget</a>
+                    </div>
+                    <div id="abs7" class="panel-footer panel-paper-footer collapse">We propose a practical solution to performing simple cross-user machine learning on a sensitive dataset distributed among a set of users with privacy concerns. We focus on a scenario in which a single company wishes to obtain the distribution of aggregate features, while ensuring a high level of privacy for the users. We are interested in the case where users own devices that are not necessarily powerful or online at all times, like smartphones or web browsers. This premise makes general solutions, such as general multiparty computation (MPC), less applicable. We design an efficient special-purpose MPC protocol that outputs aggregate features to the company, while keeping online presence and computational complexity on the users' side at a minimum. This basic protocol is secure against a majority of corrupt users, as long as they do not collude with the company. If they do, we still guarantee security, as long as the fraction of corrupt users is lower than a certain, tweakable, parameter. We propose different enhancements of this solution: one guaranteeing some degree of active security, and one that additionally ensures differential privacy (DP). Finally, we report on the performance of our implementation of the above solutions. </div>
+                </div>
+
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body"><span class="paper-author">Keith Bonawitz, Vladimir Ivanov, Ben Kreuter, Antonio Marcedone, Brendan McMahan, Sarvar Patel, Daniel Ramage, Aaron Segal, Karn Seth</span>
+                        <br /><a data-toggle="collapse" href="#abs8" class="paper-title">Practical Secure Aggregation for Federated Learning on User-Held Data</a>
+                    </div>
+                    <div id="abs8" class="panel-footer panel-paper-footer collapse">Secure Aggregation is a class of Secure Multi-Party Computation algorithms wherein a group of mutually distrustful parties u ∈ U each hold a private value x_u and collaborate to compute an aggregate value, such as the sum P = SUM(x_u, u∈U), without revealing to one another any information about their private value except what is learnable from the aggregate value itself. In this work, we consider training a deep neural network in the Federated Learning model, using distributed gradient descent across user-held training data on mobile devices, using Secure Aggregation to protect the privacy of each user’s model gradient. We identify a combination of efficiency and robustness requirements which, to the best of our knowledge, are unmet by existing algorithms in the literature. We proceed to design a novel, communication-efficient Secure Aggregation protocol for high-dimensional data that tolerates up to 1/3 of users failing to complete the protocol. For 16-bit input values, our protocol offers 1.73× communication expansion for 2^10 users and 2^20-dimensional vectors, and 1.98× expansion for 2^14 users and 2^24-dimensional vectors.</div>
+                </div>
+
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body"><span class="paper-author">Stephen Hardy, Wilko Henecka, Richard Nock</span>
+                        <br /><a data-toggle="collapse" href="#abs9" class="paper-title">On Private Supervised Distributed Learning: Weakly Labeled and without Entity Resolution</a>
+                    </div>
+                    <div id="abs9" class="panel-footer panel-paper-footer collapse">We describe a system with strong privacy guarantees that is able to learn (supervised) linear classifiers when the data is distributed and not all parties have labels. The privacy guarantees are due to the use of Rademacher observations (rados) for learning, where these rados are calculated using only the functionality provided by {\it partially} homomorphic encryption, which obscures the source data and provides realistic learning times. Furthermore, differentially private Rados may be calculated, leading to a distributed machine learning algorithm where all data remains private to the contributors, and the resulting learnt model cannot be used to reconstruct any of the data. Finally, we demonstrate that these models can be learnt when the datasets only share some categorical features, and the correspondences between entities in the datasets are {\it not} known. We illustrate the performance of the model with a synthetic dataset.</div>
+                </div>
+
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body"><span class="paper-author">Caleb Horst</span>
+                        <br /><a data-toggle="collapse" href="#abs10" class="paper-title">Oblivious FSM for Text Feature Extraction</a>
+                    </div>
+                    <div id="abs10" class="panel-footer panel-paper-footer collapse">We pursue the privacy of a rarely addressed portion of secure machine learning training and classification, namely the features used in the model. To achieve this, we use finite state machines and provide two improved variants of previous protocols for oblivious finite state machines that are optimized for a larger alphabet such as normal text. One protocol in the two party case achieves good round and communication complexity, but with heavy computation, while the second protocol reduces the computation, but requires a third untrusted, but non-colluding, helper.</div>
+                </div>
+
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body"><span class="paper-author">Igor Colin, Christophe Dupuy</span>
+                        <br /><a data-toggle="collapse" href="#abs11" class="paper-title">Decentralized Topic Modelling with Latent Dirichlet Allocation</a>
+                    </div>
+                    <div id="abs11" class="panel-footer panel-paper-footer collapse">Privacy preserving networks can be modelled as decentralized networks (e.g., sensors, connected objects, smartphones), where communication between nodes of the network is not controlled by an all-knowing, central node. For this type of networks, the main issue is to gather/learn global information on the network (e.g., by optimizing a global cost function) while keeping the (sensitive) information at each node. In this work, we focus on text information that agents do not want to share (e.g., text messages, emails, confidential reports). We use recent advances on decentralized optimization and topic models to infer topics from a graph with limited communication. We propose a method to adapt latent Dirichlet allocation (LDA) model to decentralized optimization and show on synthetic data that we still recover similar parameters and similar performance at each node than with stochastic methods accessing to the whole information in the graph.</div>
+                </div>
+
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body"><span class="paper-author">Nicolas Papernot, Ulfar Erlingsson, Martin Abadi, Kunal Talwar, Ian Goodfellow</span>
+                        <br /><a data-toggle="collapse" href="#abs12" class="paper-title">Machine Learning with Privacy by Knowledge Aggregation and Transfer</a>
+                    </div>
+                    <div id="abs12" class="panel-footer panel-paper-footer collapse">Machine learning relies on the availability of high-quality training data and---whether by its inherent nature, or by accident---this data will sometimes contain private information. When the model is to be published or made publicly accessible and the training data is not, it is important that the details of the sensitive training data cannot be inadvertently revealed by the model. This abstract presents a generally applicable approach to providing strong privacy guarantees for machine learning training data. The approach is based on combining, in a black-box fashion, multiple machine learning models trained with disjoint sensitive datasets, such as data for different users. Because they rely directly on sensitive data, these models are used only as ``teachers'' for a ``student'' machine learning model. However, when training the student, the teachers transfer only the labels upon which they all generally agree, via a noisy aggregation mechanism. The student has privacy properties that can be understood both intuitively (since no single teacher dictates the student's training) and formally, in terms of differential privacy. These properties address ``glass-box'' attacks of the kind that arise if an adversary not only queries the student but also inspects its internal workings. The approach imposes only weak assumptions on how the teachers are trained. It applies to powerful, deep models, possibly with many layers and parameters. Our experiments demonstrate that the approach applies to real-world machine learning tasks, at a reasonable cost in accuracy, privacy, and software complexity.</div>
+                </div>
+
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body"><span class="paper-author">Hiromi Arai, Hiroshi Nakagawa</span>
+                        <br /><a data-toggle="collapse" href="#abs13" class="paper-title">Privacy risk analysis in learning from distributed data</a>
+                    </div>
+                    <div id="abs13" class="panel-footer panel-paper-footer collapse">Machine learning is one of the most powerful approaches to discover knowledge from data. A large sample size will improve the performance of the learned models. On the other hand, data is often distributed privately to each site due to privacy reasons. Data anonymization is often used for privacy preservation in data sharing. However, anonymization decreases data utility while the privacy remains at risk. As an alternative approach for learning models from distributed private data, we focus on ensemble learning techniques. By using ensemble learning techniques, we can obtain a learned model based on all data by sharing only learned models from local sites.We compared privacy and utility of an anonymized data sharing and a learned model sharing. The utility is examined by the performance of the classifier made from shared anonymized datasets and that from shared classifiers. To examine privacy, we applied homogeneity attacks and model inversion. We evaluate privacy and utility using a real-world dataset and show that superiority of sharing learned models.</div>
+                </div>
+
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body"><span class="paper-author">Hassan Takabi, Ehsan Hesamifard, Mehdi Ghasemi</span>
+                        <br /><a data-toggle="collapse" href="#abs14" class="paper-title">Privacy Preserving Multi-party Machine Learning with Homomorphic Encryption</a>
+                    </div>
+                    <div id="abs14" class="panel-footer panel-paper-footer collapse">Privacy preserving multi-party machine learning approaches enable multiple parties to train a machine learning model from aggregate data while ensuring the privacy of their individual datasets is preserved. In this paper, we propose a privacy preserving multi-party machine learning approach based on homomorphic encryption where the machine learning algorithm of choice is deep neural networks. We develop theoretical foundation for implementing deep neural networks over encrypted data and utilize it in developing efficient and practical algorithms in encrypted domain.</div>
+                </div>
+
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body"><span class="paper-author">Lu Tian, Bargav Jayaraman, Quanquan Gu, David Evans</span>
+                        <br /><a data-toggle="collapse" href="#abs15" class="paper-title">Aggregating Private Sparse Learning Models Using Multi-Party Computation</a>
+                    </div>
+                    <div id="abs15" class="panel-footer panel-paper-footer collapse">We consider the problem of privately learning a sparse model across multiple sensitive datasets, and develop an approach where individual models are privately aggregated using secure multi-party computation to produce a joint model. We report some preliminary experiments on distributed sparse linear discriminant analysis, showing both the feasibility and effectiveness of our approach on experiments using heart disease data collected across four hospitals.</div>
+                </div>
+
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body"><span class="paper-author">Tariq Elahi, Ryan Henry</span>
+                        <br /><a data-toggle="collapse" href="#abs16" class="paper-title">Privacy-preserving Anomaly Detection in Tor</a>
+                    </div>
+                    <div id="abs16" class="panel-footer panel-paper-footer collapse">This extended abstract presents our vision of PrivEy, a distributed data collection and anomaly detection framework for the Tor network. PrivEy builds on the general framework of PrivEx(CCS 2014), a system for privately collecting statistics about traffic egressing the Tor network; however,PrivEy extends PrivEx in several important respects: (i) it supports the collection of a wider array of data from a wider array of vantage points within the Tor network, and (ii) beyond merely producing differentially private summary statistics about the collected data, it can also use those data to continuously train ensemble classifiers with which to recognize anomalous patterns indicative of ongoing attacks against the Tor network and its users.</div>
+                </div>
+
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body"><span class="paper-author">Pierre Dellenbach, Jan Ramon, Aurélien Bellet</span>
+                        <br /><a data-toggle="collapse" href="#abs17" class="paper-title">A Decentralized and Robust Protocol for Private Averaging over Highly Distributed Data</a>
+                    </div>
+                    <div id="abs17" class="panel-footer panel-paper-footer collapse">We propose a decentralized protocol for a large set of users to privately compute averages over their joint data, which can later be used to learn more complex models. Our protocol can find a solution of arbitrary accuracy, does not rely on a trusted third party and preserves the privacy of users throughout the execution in both the honest-but-curious and malicious adversary models. Furthermore, we design a verification procedure which offers protection against malicious users joining the service with the goal of manipulating the outcome of the algorithm.</div>
+                </div>
+
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body"><span class="paper-author">Phillipp Schoppmann, Adria Gascon, Mariana Raykova, David Evans, Samee Zahur, Jack Doerner, Borja Balle</span>
+                        <br /><a data-toggle="collapse" href="#abs18" class="paper-title">Secure Distributed Linear Regression</a>
+                    </div>
+                    <div id="abs18" class="panel-footer panel-paper-footer collapse">We present a protocol for secure computation of linear regression models on vertically distributed datasets. It consists of two phases that build on commodity-based cryptography and garbled circuits, respectively, and provides security in the semi-honest threat model. For the second phase, three algorithms are presented and analyzed in terms of strengths and weaknesses. Evaluation of a prototypical implementation on artificial training data shows that linear regression models with a million samples and 100 features can be computed securely in less than half an hour on commodity hardware. Additionally, for even larger input datasets, a tradeoff between accuracy and computation time is identified and discussed. By approximating the result using the presented custom implementation of the iterative Conjugate Gradient Descent algorithm, a significant speedup can be achieved at a moderate price in terms of accuracy.</div>
+                </div>
+
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body"><span class="paper-author">Bennett Cyphers, Kalyan Veeramachaneni</span>
+                        <br /><a data-toggle="collapse" href="#abs19" class="paper-title">AnonML: Anonymous Machine Learning Over a Network of Data Holders</a>
+                    </div>
+                    <div id="abs19" class="panel-footer panel-paper-footer collapse">Centralized data warehouses can be disadvantageous to users for many reasons, including privacy, security, and control. We propose AnonML, a system for anonymous, peer-to-peer machine learning. At a high level, AnonML functions by moving as much computation as possible to its end users, away from a central authority. AnonML users store and compute features on their own data, thereby limiting the amount of information they need to share. To generate a model, a group of data-holding peers first agree on a model definition, a set of feature functions, and an aggregator, a peer who temporarily acts as a central authority. Each peer anonymously sends several small packets of labeled feature data to the aggregator. In exchange, the aggregator generates a classifier and shares it with the group. In this way, AnonML data holders control what information they share on a feature-by-feature and model-by-model basis, and peers are able to disassociate features from their digital identities. Additionally, each peer can generate models suited to their particular needs, and the whole network benefits from the creation of novel, useful models.</div>
+                </div>
+
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body"><span class="paper-author">Jakub Konečný, H. Brendan Mcmahan, Felix Yu, Peter Richtárik, Ananda Theertha Suresh, Dave Bacon</span>
+                        <br /><a data-toggle="collapse" href="#abs20" class="paper-title">Federated Learning: Strategies for Improving Communication Efficiency</a>
+                    </div>
+                    <div id="abs20" class="panel-footer panel-paper-footer collapse">Federated Learning is a machine learning setting where the goal is to train a high-quality centralized model with training data distributed over a large number of clients each with unreliable and relatively slow network connections. We consider learning algorithms for this setting where on each round, each client independently computes an update to the current model based on its local data, and communicates this update to a central server, where the client-side updates are aggregated to compute a new global model. The typical clients in this setting are mobile phones, and communication efficiency is of utmost importance. In this paper, we propose two ways to reduce the uplink communication costs. The proposed methods are evaluated on the application of training a deep neural network to perform image classification. Our best approach reduces the upload communication required to train a reasonable model by two orders of magnitude. </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CFP & Dates Section -->
+    <section id="dates" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Call For Papers &amp; Important Dates</h2>
+                <a href="cfp-pmpml16.txt" class="btn btn-default btn-lg">Download Full CFP</a>
+                <a href="https://easychair.org/conferences/?conf=pmpml16" class="btn btn-default btn-lg">Submit Your Abstract</a>
+                <br/>
+                <br/>
+                <br/>
+                <p><b>Abstract submission</b>: <strike>September 23</strike> September 26, 2016 (11pm59 CET)
+                    <br/><b>Notification of acceptance</b>: October 3, 2016
+                    <br/><b>NIPS early <a href="https://nips.cc/Register/view-registration">registration</a> deadline</b>: October 6, 2016
+                    <!--<br/><b>Workshop</b>: December 9 or 10, 2016 (to be decided by NIPS organizers)</p>-->
+                    <br/><b>Workshop</b>: December 9, 2016</p>
+                <p>
+                    We invite submissions of recent work on private and multi-party machine learning, both theory and application-oriented. Similarly to how NIPS and other NIPS workshops are organized, all accepted abstracts will be part of a poster session held during the workshop. Additionally, the PC will select a subset of the abstracts for short oral presentations. At least one author of each accepted abstract is expected to represent it at the workshop.
+                </p>
+                <p>
+                    Submissions in the form of extended abstracts must be <b>at most 4 pages long</b> (not including references) and <b>adhere to the <a href="https://nips.cc/Conferences/2016/PaperInformation/StyleFiles">NIPS format</a></b>. We do accept submissions of work recently published or currently under review. Submissions do not need to be anonymized. The workshop will not have formal proceedings, but authors of accepted abstracts can choose to have their work published on the workshop webpage.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organizers Section -->
+    <section id="organizers" class="content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Organization</h2>
+                <br />
+                <h3>Workshop organizers</h3>
+                <ul class="list-group">
+                    <li class="list-group-item organizer">Borja Balle (Lancaster)</li>
+                    <li class="list-group-item organizer">Aurélien Bellet (INRIA)</li>
+                    <li class="list-group-item organizer">David Evans (Virginia)</li>
+                    <li class="list-group-item organizer">Adrià Gascón (Edinburgh)</li>
+                </ul>
+                <br />
+                <h3>Program Committee</h3>
+                <ul class="list-group">
+                    <li class="list-group-item organizer">Myrto Arapinis (Edinburgh)</li>
+                    <li class="list-group-item organizer">Louis Aslett (Oxford)</li>
+                    <li class="list-group-item organizer">Emiliano De Cristofaro (UCL)</li>
+                    <li class="list-group-item organizer">Jihun Hamm (Ohio State)</li>
+                    <li class="list-group-item organizer">Yan Huang (Indiana)</li>
+                    <li class="list-group-item organizer">Aggelos Kiayias (Edinburgh)</li>
+                    <li class="list-group-item organizer">Mahnush Movahedi (Yale)</li>
+                    <li class="list-group-item organizer">Jan Ramon (INRIA)</li>
+                </ul>
+                <br />
+                <h3>Sponsor</h3>
+                <br />
+                <a href="http://snips.ai">
+                    <svg width="150" viewBox="0 0 54 25">
+                        <path fill="black" d="M8.878 8.375l-1.125 1.03c-.233.214-.596.226-.83.012-.572-.523-1.27-.77-1.882-.77-.643 0-1.233.374-1.233 1.124 0 .59.483 1.018 1.288 1.313 1.852.67 4.886 1.257 4.886 4.148 0 2.437-1.878 4.5-4.805 4.5-2.5 0-4.263-1.563-5.097-3.074-.166-.302-.06-.68.246-.843l1.553-.83c.3-.16.678-.053.834.248.52 1.004 1.348 1.66 2.465 1.66 1.02 0 1.665-.454 1.665-1.444 0-1.124-1.745-1.366-3.382-2.06C1.98 12.768.72 11.83.72 9.743S2.41 5.81 5.04 5.81c1.6 0 3.015.678 3.9 1.728.21.248.176.618-.062.837M14.265 7.242c.225.094.488.052.66-.12.788-.783 2.383-1.313 3.94-1.313 2.143 0 4.16 1.364 4.16 4.068V18.9c0 .34-.274.615-.614.615h-2.097c-.34 0-.615-.275-.615-.614V10.87c0-1.606-.805-2.222-1.933-2.222-1.786 0-3.087.953-3.087 4.513v5.74c0 .34-.275.615-.615.615h-2.098c-.34 0-.615-.275-.615-.614V6.946c0-.438.447-.735.853-.565l2.062.862zM27.802 19.514h-2.1c-.338 0-.614-.274-.614-.613V6.637c0-.34.276-.613.615-.613h2.1c.338 0 .614.274.614.613V18.9c0 .34-.276.614-.615.614M26.752 0C27.988 0 28.9.937 28.9 2.14c0 1.206-.912 2.143-2.148 2.143-1.234 0-2.147-.937-2.147-2.142 0-1.203.913-2.14 2.147-2.14M36.733 8.646c-1.745 0-3.114 1.446-3.114 4.123 0 2.676 1.368 4.12 3.113 4.12 1.744 0 3.14-1.444 3.14-4.12 0-2.678-1.396-4.124-3.14-4.124m.456 11.083c-.86 0-1.696-.275-2.346-.663-.41-.245-.93.05-.93.526v4.77c0 .338-.275.612-.615.612h-2.1c-.34 0-.614-.274-.614-.613V6.945c0-.438.447-.735.852-.565l2.025.846c.248.104.53.03.71-.17.54-.615 1.63-1.247 3.016-1.247 4.08 0 6.173 2.81 6.173 6.96 0 4.148-2.094 6.96-6.174 6.96M52.78 8.375l-1.124 1.03c-.234.214-.597.226-.83.012-.572-.523-1.27-.77-1.882-.77-.644 0-1.235.374-1.235 1.124 0 .59.482 1.018 1.288 1.313 1.852.67 4.885 1.257 4.885 4.148 0 2.437-1.88 4.5-4.805 4.5-2.502 0-4.264-1.563-5.097-3.074-.165-.302-.058-.68.246-.843l1.554-.83c.3-.16.678-.053.833.248.52 1.004 1.347 1.66 2.465 1.66 1.02 0 1.664-.454 1.664-1.444 0-1.124-1.744-1.366-3.382-2.06-1.476-.617-2.738-1.554-2.738-3.642s1.692-3.935 4.322-3.935c1.6 0 3.014.678 3.9 1.728.208.248.175.618-.064.837"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Contact us: <a href="mailto:pmpml16@easychair.org">pmpml16@easychair.org</a></p>
+            <br/>
+            <p class="attribution">Header picture by <a href="https://www.flickr.com/people/62802091@N00">Josep Santacreu</a> (<a href="https://creativecommons.org/licenses/by/2.0/">some rights reserved</a>)</p>
+        </div>
+
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
