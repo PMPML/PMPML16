@@ -332,6 +332,11 @@
                 padding: 0 !important;
             }
             
+            .link-paper {
+                color: white;
+                font-weight: 400;
+            }
+            
             .btn {
                 text-transform: uppercase;
                 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;

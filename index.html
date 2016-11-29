@@ -83,8 +83,7 @@
                             Centre de Convencions Internacional Barcelona
                             <br /> Room 131-132
                         </p>
-                        <p style="color: #42DCA3; font-style: italic;"><b>News:</b> <a href="#grants" style="text-decoration: underline;">Travel grants</a> for UK-based students and researchers are available!
-                            <br />(deadline Nov. 27)</p>
+                        <p style="color: #42DCA3; font-style: italic;"><b>News:</b> Accepted papers are on-line!</p>
                     </div>
                 </div>
             </div>
@@ -272,15 +271,18 @@ different efficiency measures relevant for the practical use of secure computati
         </div>
 
         <div class="panel panel-default panel-paper">
-            <div class="panel-body panel-paper-body"><span class="paper-author">Mijung Park, James Foulds, Kamalika Chaudhuri, Max Welling</span>
-                <br /><a data-toggle="collapse" href="#abs3" class="paper-title">Private Topic Modeling</a>
+            <div class="panel-body panel-paper-body">
+                <span class="paper-author">Mijung Park, James Foulds, Kamalika Chaudhuri, Max Welling</span>
+                <br /><a data-toggle="collapse" href="#abs3" class="paper-title">Private Topic Modeling</a> &nbsp;&nbsp;
+                <a href="papers/PMPML16_paper_3.pdf" class="link-paper">[PDF]</a>
             </div>
             <div id="abs3" class="panel-footer panel-paper-footer collapse">We develop a privatised stochastic variational inference method for Latent Dirichlet Allocation (LDA). The iterative nature of stochastic variational inference presents challenges: multiple iterations are required to obtain accurate posterior distributions, yet each iteration increases the amount of noise that must be added to achieve a reasonable degree of privacy. We propose a practical algorithm that overcomes this challenge by combining: (1) A relaxed notion of the differential privacy, called concentrated differential privacy, which provides high probability bounds for cumulative privacy loss, which is well suited for iterative algorithms, rather than focusing on single-query loss; and (2) privacy amplification resulting from subsampling of large-scale data. Focusing on conjugate exponential family models, in our private variational inference, all the posterior distributions will be privatised by simply perturbing expected sufficient statistics. Using Wikipedia data, we illustrate the effectiveness of our algorithm for large-scale data.</div>
         </div>
 
         <div class="panel panel-default panel-paper">
             <div class="panel-body panel-paper-body"><span class="paper-author">Michael Smith, Max Zwiessele, Neil Lawrence</span>
-                <br /><a data-toggle="collapse" href="#abs4" class="paper-title">Differentially Private Gaussian Processes</a>
+                <br /><a data-toggle="collapse" href="#abs4" class="paper-title">Differentially Private Gaussian Processes</a> &nbsp;&nbsp;<a href="papers/PMPML16_paper_4.pdf" class="link-paper">[PDF]</a>
+
             </div>
             <div id="abs4" class="panel-footer panel-paper-footer collapse">Differential privacy allows algorithms to have provable privacy guarantees. Gaussian processes are a widely used approach for dealing with uncertainty in functions. This paper explores differentially private mechanisms for Gaussian processes. We compare adding noise both pre- and post-regression. For the former we develop a new kernel for use with binned data. For the latter we show that using inducing inputs allows us to reduce the noise scale. For the datasets used, the two strategies have comparable accuracy. Together these methods provide a starter toolkit for combining differential privacy and Gaussian processes.</div>
         </div>
@@ -301,35 +303,42 @@ different efficiency measures relevant for the practical use of secure computati
 
         <div class="panel panel-default panel-paper">
             <div class="panel-body panel-paper-body"><span class="paper-author">Morten Dahl, Valerio Pastro, Mathieu Poumeyrol</span>
-                <br /><a data-toggle="collapse" href="#abs7" class="paper-title">Private Data Aggregation on a Budget</a>
+                <br /><a data-toggle="collapse" href="#abs7" class="paper-title">Private Data Aggregation on a Budget</a> &nbsp;&nbsp;<a href="papers/PMPML16_paper_7.pdf" class="link-paper">[PDF]</a>
+
             </div>
             <div id="abs7" class="panel-footer panel-paper-footer collapse">We propose a practical solution to performing simple cross-user machine learning on a sensitive dataset distributed among a set of users with privacy concerns. We focus on a scenario in which a single company wishes to obtain the distribution of aggregate features, while ensuring a high level of privacy for the users. We are interested in the case where users own devices that are not necessarily powerful or online at all times, like smartphones or web browsers. This premise makes general solutions, such as general multiparty computation (MPC), less applicable. We design an efficient special-purpose MPC protocol that outputs aggregate features to the company, while keeping online presence and computational complexity on the users' side at a minimum. This basic protocol is secure against a majority of corrupt users, as long as they do not collude with the company. If they do, we still guarantee security, as long as the fraction of corrupt users is lower than a certain, tweakable, parameter. We propose different enhancements of this solution: one guaranteeing some degree of active security, and one that additionally ensures differential privacy (DP). Finally, we report on the performance of our implementation of the above solutions. </div>
         </div>
 
         <div class="panel panel-default panel-paper">
             <div class="panel-body panel-paper-body"><span class="paper-author">Keith Bonawitz, Vladimir Ivanov, Ben Kreuter, Antonio Marcedone, Brendan McMahan, Sarvar Patel, Daniel Ramage, Aaron Segal, Karn Seth</span>
-                <br /><a data-toggle="collapse" href="#abs8" class="paper-title">Practical Secure Aggregation for Federated Learning on User-Held Data</a>
+                <br /><a data-toggle="collapse" href="#abs8" class="paper-title">Practical Secure Aggregation for Federated Learning on User-Held Data</a> &nbsp;&nbsp;<a href="papers/PMPML16_paper_8.pdf" class="link-paper">[PDF]</a>
+
             </div>
             <div id="abs8" class="panel-footer panel-paper-footer collapse">Secure Aggregation is a class of Secure Multi-Party Computation algorithms wherein a group of mutually distrustful parties u ∈ U each hold a private value x_u and collaborate to compute an aggregate value, such as the sum P = SUM(x_u, u∈U), without revealing to one another any information about their private value except what is learnable from the aggregate value itself. In this work, we consider training a deep neural network in the Federated Learning model, using distributed gradient descent across user-held training data on mobile devices, using Secure Aggregation to protect the privacy of each user’s model gradient. We identify a combination of efficiency and robustness requirements which, to the best of our knowledge, are unmet by existing algorithms in the literature. We proceed to design a novel, communication-efficient Secure Aggregation protocol for high-dimensional data that tolerates up to 1/3 of users failing to complete the protocol. For 16-bit input values, our protocol offers 1.73× communication expansion for 2^10 users and 2^20-dimensional vectors, and 1.98× expansion for 2^14 users and 2^24-dimensional vectors.</div>
         </div>
 
         <div class="panel panel-default panel-paper">
             <div class="panel-body panel-paper-body"><span class="paper-author">Stephen Hardy, Wilko Henecka, Richard Nock</span>
-                <br /><a data-toggle="collapse" href="#abs9" class="paper-title">On Private Supervised Distributed Learning: Weakly Labeled and without Entity Resolution</a>
+                <br /><a data-toggle="collapse" href="#abs9" class="paper-title">On Private Supervised Distributed Learning: Weakly Labeled and without Entity Resolution</a> &nbsp;&nbsp;<a href="papers/PMPML16_paper_9.pdf" class="link-paper">[PDF]</a>
+
             </div>
             <div id="abs9" class="panel-footer panel-paper-footer collapse">We describe a system with strong privacy guarantees that is able to learn (supervised) linear classifiers when the data is distributed and not all parties have labels. The privacy guarantees are due to the use of Rademacher observations (rados) for learning, where these rados are calculated using only the functionality provided by {\it partially} homomorphic encryption, which obscures the source data and provides realistic learning times. Furthermore, differentially private Rados may be calculated, leading to a distributed machine learning algorithm where all data remains private to the contributors, and the resulting learnt model cannot be used to reconstruct any of the data. Finally, we demonstrate that these models can be learnt when the datasets only share some categorical features, and the correspondences between entities in the datasets are {\it not} known. We illustrate the performance of the model with a synthetic dataset.</div>
         </div>
 
         <div class="panel panel-default panel-paper">
             <div class="panel-body panel-paper-body"><span class="paper-author">Igor Colin, Christophe Dupuy</span>
-                <br /><a data-toggle="collapse" href="#abs11" class="paper-title">Decentralized Topic Modelling with Latent Dirichlet Allocation</a>
+                <br /><a data-toggle="collapse" href="#abs11" class="paper-title">Decentralized Topic Modelling with Latent Dirichlet Allocation</a> &nbsp;&nbsp;
+                <a href="papers/PMPML16_paper_11.pdf" class="link-paper">[PDF]</a>
+
             </div>
             <div id="abs11" class="panel-footer panel-paper-footer collapse">Privacy preserving networks can be modelled as decentralized networks (e.g., sensors, connected objects, smartphones), where communication between nodes of the network is not controlled by an all-knowing, central node. For this type of networks, the main issue is to gather/learn global information on the network (e.g., by optimizing a global cost function) while keeping the (sensitive) information at each node. In this work, we focus on text information that agents do not want to share (e.g., text messages, emails, confidential reports). We use recent advances on decentralized optimization and topic models to infer topics from a graph with limited communication. We propose a method to adapt latent Dirichlet allocation (LDA) model to decentralized optimization and show on synthetic data that we still recover similar parameters and similar performance at each node than with stochastic methods accessing to the whole information in the graph.</div>
         </div>
 
         <div class="panel panel-default panel-paper">
             <div class="panel-body panel-paper-body"><span class="paper-author">Nicolas Papernot, Ulfar Erlingsson, Martin Abadi, Kunal Talwar, Ian Goodfellow</span>
-                <br /><a data-toggle="collapse" href="#abs12" class="paper-title">Machine Learning with Privacy by Knowledge Aggregation and Transfer</a>
+                <br /><a data-toggle="collapse" href="#abs12" class="paper-title">Machine Learning with Privacy by Knowledge Aggregation and Transfer</a> &nbsp;&nbsp;
+                <a href="papers/PMPML16_paper_12.pdf" class="link-paper">[PDF]</a>
+
             </div>
             <div id="abs12" class="panel-footer panel-paper-footer collapse">Machine learning relies on the availability of high-quality training data and---whether by its inherent nature, or by accident---this data will sometimes contain private information. When the model is to be published or made publicly accessible and the training data is not, it is important that the details of the sensitive training data cannot be inadvertently revealed by the model. This abstract presents a generally applicable approach to providing strong privacy guarantees for machine learning training data. The approach is based on combining, in a black-box fashion, multiple machine learning models trained with disjoint sensitive datasets, such as data for different users. Because they rely directly on sensitive data, these models are used only as ``teachers'' for a ``student'' machine learning model. However, when training the student, the teachers transfer only the labels upon which they all generally agree, via a noisy aggregation mechanism. The student has privacy properties that can be understood both intuitively (since no single teacher dictates the student's training) and formally, in terms of differential privacy. These properties address ``glass-box'' attacks of the kind that arise if an adversary not only queries the student but also inspects its internal workings. The approach imposes only weak assumptions on how the teachers are trained. It applies to powerful, deep models, possibly with many layers and parameters. Our experiments demonstrate that the approach applies to real-world machine learning tasks, at a reasonable cost in accuracy, privacy, and software complexity.</div>
         </div>
@@ -343,21 +352,27 @@ different efficiency measures relevant for the practical use of secure computati
 
         <div class="panel panel-default panel-paper">
             <div class="panel-body panel-paper-body"><span class="paper-author">Hassan Takabi, Ehsan Hesamifard, Mehdi Ghasemi</span>
-                <br /><a data-toggle="collapse" href="#abs14" class="paper-title">Privacy Preserving Multi-party Machine Learning with Homomorphic Encryption</a>
+                <br /><a data-toggle="collapse" href="#abs14" class="paper-title">Privacy Preserving Multi-party Machine Learning with Homomorphic Encryption</a> &nbsp;&nbsp;
+                <a href="papers/PMPML16_paper_14.pdf" class="link-paper">[PDF]</a>
+
             </div>
             <div id="abs14" class="panel-footer panel-paper-footer collapse">Privacy preserving multi-party machine learning approaches enable multiple parties to train a machine learning model from aggregate data while ensuring the privacy of their individual datasets is preserved. In this paper, we propose a privacy preserving multi-party machine learning approach based on homomorphic encryption where the machine learning algorithm of choice is deep neural networks. We develop theoretical foundation for implementing deep neural networks over encrypted data and utilize it in developing efficient and practical algorithms in encrypted domain.</div>
         </div>
 
         <div class="panel panel-default panel-paper">
             <div class="panel-body panel-paper-body"><span class="paper-author">Lu Tian, Bargav Jayaraman, Quanquan Gu, David Evans</span>
-                <br /><a data-toggle="collapse" href="#abs15" class="paper-title">Aggregating Private Sparse Learning Models Using Multi-Party Computation</a>
+                <br /><a data-toggle="collapse" href="#abs15" class="paper-title">Aggregating Private Sparse Learning Models Using Multi-Party Computation</a> &nbsp;&nbsp;
+                <a href="papers/PMPML16_paper_15.pdf" class="link-paper">[PDF]</a>
+
             </div>
             <div id="abs15" class="panel-footer panel-paper-footer collapse">We consider the problem of privately learning a sparse model across multiple sensitive datasets, and develop an approach where individual models are privately aggregated using secure multi-party computation to produce a joint model. We report some preliminary experiments on distributed sparse linear discriminant analysis, showing both the feasibility and effectiveness of our approach on experiments using heart disease data collected across four hospitals.</div>
         </div>
 
         <div class="panel panel-default panel-paper">
             <div class="panel-body panel-paper-body"><span class="paper-author">Tariq Elahi, Ryan Henry</span>
-                <br /><a data-toggle="collapse" href="#abs16" class="paper-title">Privacy-preserving Anomaly Detection in Tor</a>
+                <br /><a data-toggle="collapse" href="#abs16" class="paper-title">Privacy-preserving Anomaly Detection in Tor</a> &nbsp;&nbsp;
+                <a href="papers/PMPML16_paper_16.pdf" class="link-paper">[PDF]</a>
+
             </div>
             <div id="abs16" class="panel-footer panel-paper-footer collapse">This extended abstract presents our vision of PrivEy, a distributed data collection and anomaly detection framework for the Tor network. PrivEy builds on the general framework of PrivEx(CCS 2014), a system for privately collecting statistics about traffic egressing the Tor network; however,PrivEy extends PrivEx in several important respects: (i) it supports the collection of a wider array of data from a wider array of vantage points within the Tor network, and (ii) beyond merely producing differentially private summary statistics about the collected data, it can also use those data to continuously train ensemble classifiers with which to recognize anomalous patterns indicative of ongoing attacks against the Tor network and its users.</div>
         </div>
@@ -385,7 +400,9 @@ different efficiency measures relevant for the practical use of secure computati
 
         <div class="panel panel-default panel-paper">
             <div class="panel-body panel-paper-body"><span class="paper-author">Jakub Konečný, H. Brendan Mcmahan, Felix Yu, Peter Richtárik, Ananda Theertha Suresh, Dave Bacon</span>
-                <br /><a data-toggle="collapse" href="#abs20" class="paper-title">Federated Learning: Strategies for Improving Communication Efficiency</a>
+                <br /><a data-toggle="collapse" href="#abs20" class="paper-title">Federated Learning: Strategies for Improving Communication Efficiency</a> &nbsp;&nbsp;
+                <a href="papers/PMPML16_paper_20.pdf" class="link-paper">[PDF]</a>
+
             </div>
             <div id="abs20" class="panel-footer panel-paper-footer collapse">Federated Learning is a machine learning setting where the goal is to train a high-quality centralized model with training data distributed over a large number of clients each with unreliable and relatively slow network connections. We consider learning algorithms for this setting where on each round, each client independently computes an update to the current model based on its local data, and communicates this update to a central server, where the client-side updates are aggregated to compute a new global model. The typical clients in this setting are mobile phones, and communication efficiency is of utmost importance. In this paper, we propose two ways to reduce the uplink communication costs. The proposed methods are evaluated on the application of training a deep neural network to perform image classification. Our best approach reduces the upload communication required to train a reasonable model by two orders of magnitude. </div>
         </div>
