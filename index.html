@@ -83,6 +83,7 @@
                             Centre de Convencions Internacional Barcelona
                             <br /> Room 131-132
                         </p>
+                        <p style="color: #42DCA3; font-style: italic;"><b>News:</b> The schedule has recently changed!</p>
                         <p style="color: #42DCA3; font-style: italic;"><b>News:</b> Accepted papers are on-line!</p>
                     </div>
                 </div>
@@ -132,17 +133,7 @@
                             <td class="slot">Welcome and Introduction</td>
                         </tr>
                         <tr>
-                            <td class="time">9.00</td>
-                            <td class="slot talk">
-                                <a href="#tabs1" data-toggle="collapse" class="accordion-toggle">Kobbi Nissim &mdash; TBD</button></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2" class="hiddenRow">
-                                <div class="accordion-body collapse talk-abstract" id="tabs1">TBD</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="time">9.45</td>
+			    <td class="time">9.00</td>
                             <td class="slot talk"><a href="#tabs2" data-toggle="collapse" class="accordion-toggle">Mariana Raykova &mdash; Secure Computation: Why, How and When</button></td>
                         </tr>
                         <tr>
@@ -158,6 +149,15 @@ Yao garbled circuits, approaches based an secret sharing and others. Lastly we w
 different efficiency measures relevant for the practical use of secure computation protocols.</div>
                             </td>
                         </tr>
+			<tr>
+                            <td class="time">09.45</td>
+                            <td class="slot talk"><a href="#tabs4" data-toggle="collapse" class="accordion-toggle">Stratis Ioannidis &mdash; Secure Function Evaluation at Scale</button></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="hiddenRow">
+                                <div class="accordion-body collapse talk-abstract" id="tabs4">Secure Function Evaluation (SFE) allows an interested party to evaluate a function over private data without learning anything about the inputs other than the outcome of this computation. This offers a strong privacy guarantee: SFE enables, e.g., a medical researcher, a statistician, or a data analyst, to conduct a study over private, sensitive data, without jeopardizing the privacy of the study's participants (patients, online users, etc.). Nevertheless, applying SFE to “big data” poses several challenges. First, beyond any computational overheads due to encryptions and decryptions, executing an algorithm securely may lead to a polynomial blowup in the total work (i.e., number of computation steps) compared to execution in the clear. For large datasets, even going from linear to quadratic time is prohibitive. Second, secure evaluations of algorithms should also maintain parallelizability: an algorithm that is easy to parallelize in the clear should also maintain this property in its SFE version, if its execution is to scale. Addressing this is challenging as communication patterns between processors often reveal a lot about the private inputs. In this talk, we show that several machine learning and data mining algorithms can be executed securely while leading to only (a) a logarithmic blow-up in total work and (b) a logarithmic increase in the execution time when executed in parallel. Our techniques generalize to any algorithm that is graph-parallel, i.e.,  can be expressed through a sequence of scatter, gather, and apply operations. This includes several algorithms of great practical interest, including page rank, matrix factorization, and training neural networks, to name a few.</div>
+                            </td>
+                        </tr>
                         <tr>
                             <td class="time">10.30</td>
                             <td class="slot break">Coffee Break</td>
@@ -171,13 +171,22 @@ different efficiency measures relevant for the practical use of secure computati
                                 <div class="accordion-body collapse talk-abstract" id="tabs3">The field of Secure Multiparty Computation (MPC) has seen an explosion of research over the past few years: though once a mostly theoretical idea, it has rapidly become a powerful, practical tool capable of efficiently solving real-world problems. However, this has come at the cost of dramatically increased complexity, expressed through a diversity of foundational techniques, high-level systems, and implementation folk knowledge. This talk will address the practical aspects of multiparty computation, discussing a number of low level paradigms and their accompanying implementations, along with the various efficiency, functionality, and usability compromises that they offer. In addition, it will serve as an introduction to a set of tools and techniques that are commonly used in conjunction with generic MPC schemes, such as Oblivious RAM, permutation networks, and custom protocols. It is hoped that this will serve as a jumping-off-point, from which new problems can be addressed.</div>
                             </td>
                         </tr>
-                        <tr>
+			<tr>
                             <td class="time">11.30</td>
-                            <td class="slot talk"><a href="#tabs4" data-toggle="collapse" class="accordion-toggle">Stratis Ioannidis &mdash; Secure Function Evaluation at Scale</button></td>
+                            <td class="slot talk"><a href="#tabs7" data-toggle="collapse" class="accordion-toggle">AnonML: Anonymous Machine Learning Over a Network of Data Holders <i>(contributed talk)</i></button></td>
                         </tr>
                         <tr>
                             <td colspan="2" class="hiddenRow">
-                                <div class="accordion-body collapse talk-abstract" id="tabs4">Secure Function Evaluation (SFE) allows an interested party to evaluate a function over private data without learning anything about the inputs other than the outcome of this computation. This offers a strong privacy guarantee: SFE enables, e.g., a medical researcher, a statistician, or a data analyst, to conduct a study over private, sensitive data, without jeopardizing the privacy of the study's participants (patients, online users, etc.). Nevertheless, applying SFE to “big data” poses several challenges. First, beyond any computational overheads due to encryptions and decryptions, executing an algorithm securely may lead to a polynomial blowup in the total work (i.e., number of computation steps) compared to execution in the clear. For large datasets, even going from linear to quadratic time is prohibitive. Second, secure evaluations of algorithms should also maintain parallelizability: an algorithm that is easy to parallelize in the clear should also maintain this property in its SFE version, if its execution is to scale. Addressing this is challenging as communication patterns between processors often reveal a lot about the private inputs. In this talk, we show that several machine learning and data mining algorithms can be executed securely while leading to only (a) a logarithmic blow-up in total work and (b) a logarithmic increase in the execution time when executed in parallel. Our techniques generalize to any algorithm that is graph-parallel, i.e.,  can be expressed through a sequence of scatter, gather, and apply operations. This includes several algorithms of great practical interest, including page rank, matrix factorization, and training neural networks, to name a few.</div>
+                                <div class="accordion-body collapse talk-abstract" id="tabs7">Centralized data warehouses can be disadvantageous to users for many reasons, including privacy, security, and control. We propose AnonML, a system for anonymous, peer-to-peer machine learning. At a high level, AnonML functions by moving as much computation as possible to its end users, away from a central authority. AnonML users store and compute features on their own data, thereby limiting the amount of information they need to share. To generate a model, a group of data-holding peers first agree on a model definition, a set of feature functions, and an aggregator, a peer who temporarily acts as a central authority. Each peer anonymously sends several small packets of labeled feature data to the aggregator. In exchange, the aggregator generates a classifier and shares it with the group. In this way, AnonML data holders control what information they share on a feature-by-feature and model-by-model basis, and peers are able to disassociate features from their digital identities. Additionally, each peer can generate models suited to their particular needs, and the whole network benefits from the creation of novel, useful models.</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="time">11.50</td>
+                            <td class="slot talk"><a href="#tabs8" data-toggle="collapse" class="accordion-toggle">Private Topic Modeling <i>(contributed talk)</i></button></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="hiddenRow">
+                                <div class="accordion-body collapse talk-abstract" id="tabs8">We develop a privatised stochastic variational inference method for Latent Dirichlet Allocation (LDA). The iterative nature of stochastic variational inference presents challenges: multiple iterations are required to obtain accurate posterior distributions, yet each iteration increases the amount of noise that must be added to achieve a reasonable degree of privacy. We propose a practical algorithm that overcomes this challenge by combining: (1) A relaxed notion of the differential privacy, called concentrated differential privacy, which provides high probability bounds for cumulative privacy loss, which is well suited for iterative algorithms, rather than focusing on single-query loss; and (2) privacy amplification resulting from subsampling of large-scale data. Focusing on conjugate exponential family models, in our private variational inference, all the posterior distributions will be privatised by simply perturbing expected sufficient statistics. Using Wikipedia data, we illustrate the effectiveness of our algorithm for large-scale data.</div>
                             </td>
                         </tr>
                         <tr>
@@ -207,6 +216,15 @@ different efficiency measures relevant for the practical use of secure computati
                         </tr>
                         <tr>
                             <td class="time">16.30</td>
+                            <td class="slot talk"><a href="#tabs9" data-toggle="collapse" class="accordion-toggle">Richard Noch &mdash; TBD </button></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="hiddenRow">
+                                <div class="accordion-body collapse talk-abstract" id="tabs9">TBD</div>
+                            </td>
+                        </tr>
+			<tr>
+                            <td class="time">17.15</td>
                             <td class="slot talk"><a href="#tabs6" data-toggle="collapse" class="accordion-toggle">Dawn Song &mdash; Lessons and Open Challenges in Secure and Privacy-Preserving Machine Learning and Data Analytics </button></td>
                         </tr>
                         <tr>
@@ -215,34 +233,7 @@ different efficiency measures relevant for the practical use of secure computati
                             </td>
                         </tr>
                         <tr>
-                            <td class="time">17.15</td>
-                            <td class="slot talk"><a href="#tabs7" data-toggle="collapse" class="accordion-toggle">AnonML: Anonymous Machine Learning Over a Network of Data Holders <i>(contributed talk)</i></button></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2" class="hiddenRow">
-                                <div class="accordion-body collapse talk-abstract" id="tabs7">Centralized data warehouses can be disadvantageous to users for many reasons, including privacy, security, and control. We propose AnonML, a system for anonymous, peer-to-peer machine learning. At a high level, AnonML functions by moving as much computation as possible to its end users, away from a central authority. AnonML users store and compute features on their own data, thereby limiting the amount of information they need to share. To generate a model, a group of data-holding peers first agree on a model definition, a set of feature functions, and an aggregator, a peer who temporarily acts as a central authority. Each peer anonymously sends several small packets of labeled feature data to the aggregator. In exchange, the aggregator generates a classifier and shares it with the group. In this way, AnonML data holders control what information they share on a feature-by-feature and model-by-model basis, and peers are able to disassociate features from their digital identities. Additionally, each peer can generate models suited to their particular needs, and the whole network benefits from the creation of novel, useful models.</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="time">17.35</td>
-                            <td class="slot talk"><a href="#tabs8" data-toggle="collapse" class="accordion-toggle">Private Topic Modeling <i>(contributed talk)</i></button></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2" class="hiddenRow">
-                                <div class="accordion-body collapse talk-abstract" id="tabs8">We develop a privatised stochastic variational inference method for Latent Dirichlet Allocation (LDA). The iterative nature of stochastic variational inference presents challenges: multiple iterations are required to obtain accurate posterior distributions, yet each iteration increases the amount of noise that must be added to achieve a reasonable degree of privacy. We propose a practical algorithm that overcomes this challenge by combining: (1) A relaxed notion of the differential privacy, called concentrated differential privacy, which provides high probability bounds for cumulative privacy loss, which is well suited for iterative algorithms, rather than focusing on single-query loss; and (2) privacy amplification resulting from subsampling of large-scale data. Focusing on conjugate exponential family models, in our private variational inference, all the posterior distributions will be privatised by simply perturbing expected sufficient statistics. Using Wikipedia data, we illustrate the effectiveness of our algorithm for large-scale data.</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="time">17.55</td>
-                            <td class="slot talk"><a href="#tabs9" data-toggle="collapse" class="accordion-toggle">Nina Balcan &mdash; TBD </button></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2" class="hiddenRow">
-                                <div class="accordion-body collapse talk-abstract" id="tabs9">TBD</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="time">18.40</td>
+                            <td class="time">18.00</td>
                             <td class="slot">Wrap Up</td>
                         </tr>
 		    </tbody>
