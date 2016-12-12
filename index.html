@@ -83,7 +83,7 @@
                             Centre de Convencions Internacional Barcelona
                             <br /> Room 131-132
                         </p>
-                        <p style="color: #42DCA3; font-style: italic;"><b>News:</b> The schedule has recently changed!</p>
+                        <p style="color: #42DCA3; font-style: italic;"><b>News:</b> Slides from invited talks are now available!</p>
                     </div>
                 </div>
             </div>
@@ -133,28 +133,20 @@
                         </tr>
                         <tr>
                             <td class="time">9.00</td>
-                            <td class="slot talk"><a href="#tabs2" data-toggle="collapse" class="accordion-toggle">Mariana Raykova &mdash; Secure Computation: Why, How and When</button></td>
+                            <td class="slot talk"><a href="#tabs2" data-toggle="collapse" class="accordion-toggle">Mariana Raykova &mdash; Secure Computation: Why, How and When</button> &nbsp;&nbsp;<a href="slides/raykova.pdf" class="link-paper">[slides]</a></td>
                         </tr>
                         <tr>
                             <td colspan="2" class="hiddenRow">
-                                <div class="accordion-body collapse talk-abstract" id="tabs2">The goal of secure computation is to facilitate the evaluation of functionalities that depends on
-the private inputs of several distrusting parties in a privacy preserving manner which minimizes
-the information revealed about the inputs. In this talk we will introduce example problems 
-motivating the work in the area of secure computation including problems related to machine
-learning. We will discuss how we formalize the notion of privacy in cryptographic protocols
-and how we prove privacy preserving properties for secure computation constructions. We will 
-provide an overview of some main techniques and constructions for secure computation including
-Yao garbled circuits, approaches based an secret sharing and others. Lastly we will cover the 
-different efficiency measures relevant for the practical use of secure computation protocols.</div>
+                                <div class="accordion-body collapse talk-abstract" id="tabs2">The goal of secure computation is to facilitate the evaluation of functionalities that depends on the private inputs of several distrusting parties in a privacy preserving manner which minimizes the information revealed about the inputs. In this talk we will introduce example problems motivating the work in the area of secure computation including problems related to machine learning. We will discuss how we formalize the notion of privacy in cryptographic protocols and how we prove privacy preserving properties for secure computation constructions. We will provide an overview of some main techniques and constructions for secure computation including Yao garbled circuits, approaches based an secret sharing and others. Lastly we will cover the different efficiency measures relevant for the practical use of secure computation protocols.</div>
                             </td>
                         </tr>
-			<tr>
+                        <tr>
                             <td class="time">09.45</td>
-                            <td class="slot talk"><a href="#tabs4" data-toggle="collapse" class="accordion-toggle">Stratis Ioannidis &mdash; Secure Function Evaluation at Scale</button></td>
+                            <td class="slot talk"><a href="#tabs4" data-toggle="collapse" class="accordion-toggle">Stratis Ioannidis &mdash; Secure Function Evaluation at Scale</button> &nbsp;&nbsp;<a href="slides/ioannidis.pdf" class="link-paper">[slides]</a></td>
                         </tr>
                         <tr>
                             <td colspan="2" class="hiddenRow">
-                                <div class="accordion-body collapse talk-abstract" id="tabs4">Secure Function Evaluation (SFE) allows an interested party to evaluate a function over private data without learning anything about the inputs other than the outcome of this computation. This offers a strong privacy guarantee: SFE enables, e.g., a medical researcher, a statistician, or a data analyst, to conduct a study over private, sensitive data, without jeopardizing the privacy of the study's participants (patients, online users, etc.). Nevertheless, applying SFE to “big data” poses several challenges. First, beyond any computational overheads due to encryptions and decryptions, executing an algorithm securely may lead to a polynomial blowup in the total work (i.e., number of computation steps) compared to execution in the clear. For large datasets, even going from linear to quadratic time is prohibitive. Second, secure evaluations of algorithms should also maintain parallelizability: an algorithm that is easy to parallelize in the clear should also maintain this property in its SFE version, if its execution is to scale. Addressing this is challenging as communication patterns between processors often reveal a lot about the private inputs. In this talk, we show that several machine learning and data mining algorithms can be executed securely while leading to only (a) a logarithmic blow-up in total work and (b) a logarithmic increase in the execution time when executed in parallel. Our techniques generalize to any algorithm that is graph-parallel, i.e.,  can be expressed through a sequence of scatter, gather, and apply operations. This includes several algorithms of great practical interest, including page rank, matrix factorization, and training neural networks, to name a few.</div>
+                                <div class="accordion-body collapse talk-abstract" id="tabs4">Secure Function Evaluation (SFE) allows an interested party to evaluate a function over private data without learning anything about the inputs other than the outcome of this computation. This offers a strong privacy guarantee: SFE enables, e.g., a medical researcher, a statistician, or a data analyst, to conduct a study over private, sensitive data, without jeopardizing the privacy of the study's participants (patients, online users, etc.). Nevertheless, applying SFE to “big data” poses several challenges. First, beyond any computational overheads due to encryptions and decryptions, executing an algorithm securely may lead to a polynomial blowup in the total work (i.e., number of computation steps) compared to execution in the clear. For large datasets, even going from linear to quadratic time is prohibitive. Second, secure evaluations of algorithms should also maintain parallelizability: an algorithm that is easy to parallelize in the clear should also maintain this property in its SFE version, if its execution is to scale. Addressing this is challenging as communication patterns between processors often reveal a lot about the private inputs. In this talk, we show that several machine learning and data mining algorithms can be executed securely while leading to only (a) a logarithmic blow-up in total work and (b) a logarithmic increase in the execution time when executed in parallel. Our techniques generalize to any algorithm that is graph-parallel, i.e., can be expressed through a sequence of scatter, gather, and apply operations. This includes several algorithms of great practical interest, including page rank, matrix factorization, and training neural networks, to name a few.</div>
                             </td>
                         </tr>
                         <tr>
@@ -163,14 +155,14 @@ different efficiency measures relevant for the practical use of secure computati
                         </tr>
                         <tr>
                             <td class="time">11.00</td>
-                            <td class="slot talk"><a href="#tabs3" data-toggle="collapse" class="accordion-toggle">Jack Doerner &mdash; An Introduction to Practical MPC </button></td>
+                            <td class="slot talk"><a href="#tabs3" data-toggle="collapse" class="accordion-toggle">Jack Doerner &mdash; An Introduction to Practical MPC </button> &nbsp;&nbsp;<a href="slides/doerner.pdf" class="link-paper">[slides]</a></td>
                         </tr>
                         <tr>
                             <td colspan="2" class="hiddenRow">
                                 <div class="accordion-body collapse talk-abstract" id="tabs3">The field of Secure Multiparty Computation (MPC) has seen an explosion of research over the past few years: though once a mostly theoretical idea, it has rapidly become a powerful, practical tool capable of efficiently solving real-world problems. However, this has come at the cost of dramatically increased complexity, expressed through a diversity of foundational techniques, high-level systems, and implementation folk knowledge. This talk will address the practical aspects of multiparty computation, discussing a number of low level paradigms and their accompanying implementations, along with the various efficiency, functionality, and usability compromises that they offer. In addition, it will serve as an introduction to a set of tools and techniques that are commonly used in conjunction with generic MPC schemes, such as Oblivious RAM, permutation networks, and custom protocols. It is hoped that this will serve as a jumping-off-point, from which new problems can be addressed.</div>
                             </td>
                         </tr>
-			<tr>
+                        <tr>
                             <td class="time">11.30</td>
                             <td class="slot talk"><a href="#tabs7" data-toggle="collapse" class="accordion-toggle">AnonML: Anonymous Machine Learning Over a Network of Data Holders <i>(contributed talk)</i></button></td>
                         </tr>
@@ -215,14 +207,14 @@ different efficiency measures relevant for the practical use of secure computati
                         </tr>
                         <tr>
                             <td class="time">16.30</td>
-                            <td class="slot talk"><a href="#tabs9" data-toggle="collapse" class="accordion-toggle">Richard Nock &mdash; Confidential Computing - Federate Private Data Analysis</button></td>
+                            <td class="slot talk"><a href="#tabs9" data-toggle="collapse" class="accordion-toggle">Richard Nock &mdash; Confidential Computing - Federate Private Data Analysis</button> &nbsp;&nbsp;<a href="slides/nock.pdf" class="link-paper">[slides]</a></td>
                         </tr>
                         <tr>
                             <td colspan="2" class="hiddenRow">
                                 <div class="accordion-body collapse talk-abstract" id="tabs9">TBD</div>
                             </td>
                         </tr>
-			<tr>
+                        <tr>
                             <td class="time">17.15</td>
                             <td class="slot talk"><a href="#tabs6" data-toggle="collapse" class="accordion-toggle">Dawn Song &mdash; Lessons and Open Challenges in Secure and Privacy-Preserving Machine Learning and Data Analytics </button></td>
                         </tr>
